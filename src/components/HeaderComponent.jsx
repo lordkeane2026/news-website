@@ -12,7 +12,7 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <header>
-                    <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
+                    <nav className='navbar navbar-expand-md navbar-dark bg-dark' style={{padding:'10px'}}>
                         <div><a href='#' className='navbar-brand'>News Portal</a></div>
                     </nav>
                 </header>

@@ -27,7 +27,7 @@ class ListArticleComponent extends Component {
                                     <h5 class="card-title">{article.title}</h5>
                                     <p class="card-text"><small class="text-muted">Author : {article.author}</small></p>
                                     <p class="card-text">{article.content}</p>
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href={article.url} target="_blank" class="btn btn-primary">more</a>
                                 </div>
                             </div>
                         )
