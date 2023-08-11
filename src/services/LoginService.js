@@ -1,17 +1,17 @@
 import axios from "axios";
 
-const ARTICLE_API_BASE_URL = "http://localhost:8080/article/headline"
+const LOGIN_API_BASE_URL = "http://localhost:8080/auth/login"
 
-class ArticleService{
+class LoginService{
 
-    getArticles(){
+    getLogin(param){
         // return axios.get(ARTICLE_API_BASE_URL, {
         //     headers: {
         //       'authorization': 'Basic YWRtaW46YWRtaW4='
         //     }
         //   });
-        return axios.get(ARTICLE_API_BASE_URL);
+        return axios.post(LOGIN_API_BASE_URL,param);
     }
 }
 
-export default new ArticleService()
+export default new LoginService()
